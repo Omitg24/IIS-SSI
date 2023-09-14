@@ -1,0 +1,27 @@
+Lab 11: Técnicas de Red Team Techniques a través de MITRE ATTACK (Part 1);;;
+Nivel de Insignia;Desbloqueada cuando;Notas;
+Bronce;Puedes habilitar un listener netcat en cualquier puerto;nc -lvp <port>;
+Bronce;Comprendes lo que hace el listener netcat cuando otra máquina se conecta a él;Si;
+Bronce;Puedes responder a esta pregunta: En las técnicas de exfiltración de datos que revisamos usando GTFOBins, ¿cuál es la diferencia cuando usamos la última (PHP)?;;
+Bronce;Puedes responder a esta pregunta: ¿El bind o el reverse shell te pidieron usuarios o contraseñas?;No;
+Bronce;Puedes localizar exploits públicos para servicios y sus versiones;searchsploit <name> <version>;
+Bronce;Comprendes las similitudes, diferencias, ventajas y desventajas entre searchploit y www.exploit-db.com;Si;
+Bronce;Puedes responder a esta pregunta: ¿Por qué el archivo /etc/issue puede contener información confidencial?;Puede contener el nombre de la maquina a la que nos conectamos, ip o más detalles;
+Bronce;Sabes cómo enumerar recursos compartidos SMB remotos;smbclient -L <ip> -N;
+Plata;Entiendes por qué ser root todo el tiempo es una mala idea en cuanto a seguridad ;Porque en caso de que accedan a la maquina no será necesario escalar privilegios y podrán acceder a archivos sensibles como /etc/shadow;
+Plata;Puedes responder a esta pregunta: ¿Cuál es el propósito de tener todas estas posibilidades para exfiltrar archivos con la técnica GTFOBins?;Para proporcionar una referencia y un recurso para profesionales de seguridad, investigadores y pentesters;
+Plata;Puedes responder a esta pregunta: ¿Cuál te imaginas que es el uso más directo de tener un archivo /etc/passwd exfiltrado de una máquina?;Poder acceder a usuarios con más privilegios;
+Plata;Puedes responder a esta pregunta: ¿Qué herramienta de seguridad puede prevenir varias de las técnicas de exfiltración que vimos?;Firewall;
+Plata;Puedes responder a esta pregunta: ¿Por qué usar términos de una página web del objetivo para hacer una lista de palabras podría ser un mejor enfoque que una estrategia de fuerza bruta pura?;Porque el usuario puede que haya empleado palabras o parte de estas para acceder a la web, es una forma de conocer el pensamiento del usuario;
+Plata;Puedes responder a estas preguntas: ¿Qué sucede si obtiene un usuario FTP y una contraseña válidos? ¿Puedes iniciar sesión con esta combinación de usuario y contraseña?;Que se ha encontrado un acceso a la maquina;Si
+Plata;Puedes responder a esta pregunta: ¿Qué puedes hacer para evitar por completo que se usen bind shells contra una máquina? ;Utilizar un firewall que bloquee conexiones entrantes;
+Plata;Comprendes la importancia de ocultar los tipos y versiones de los servicios. Puede responder a esta pregunta: ¿Está el código de un exploit completamente disponible y legible con searchsploit?;Si, no es recomendable tenerlos visibles, al poder sacar los posibles exploits para dicha tecnologia;Si
+Plata;Entiendes lo que dotdotpwn está tratando de hacer para aprovechar una posible vulnerabilidad de LFI para obtener información confidencial.  Puedes responder a esta pregunta: ¿Qué crees que dotdotpwn está tratando de saltarse con sus acciones ?;Si;Las restricciones de seguridad impuestas por la aplicación y obtener acceso a información confidencial
+Plata;Comprendes lo peligroso que puede ser dejar accesible una carpeta compartida desprotegida. Puedes responder a esta pregunta: en caso de que encuentres una carpeta compartida protegida, ¿cómo podrías obtener una combinación válida de usuario / contraseña?  ;Obteniendo la lista de usuarios y contraseñas del sistema y accediendo a la carpeta con estos;
+Oro;Comprendes la peligrosidad de la exfiltración de datos y por qué tener los permisos adecuados en los archivos es clave. Puede responder a esta pregunta: ¿Qué archivos exfiltrarías para comprometer una máquina / sitio web / programa si pudieras?;Datos de acceso;
+Oro;"Comprendes por qué se utilizan los GTFOBins en lugar de malware de exfiltración de datos construido exprofeso.  Puedes responder a esta pregunta: ¿Qué tipo de ejecutable crees que será más ""sigiloso"" para pasar desapercibido ante una herramienta de vigilancia?";;
+Oro;Puedes responder a esta pregunta: ¿Qué herramienta utilizamos que puede prevenir ataques remotos de fuerza bruta como los que practica en este laboratorio?;Bloqueo tras intentos fallidos;
+Oro;Puedes responder a esta pregunta: ¿Qué técnica podría detener por completo el ataque de fuerza bruta de contraseñas contra SSH?;Bloqueo de cuentas tras varios intentos fallidos;
+Oro;Comprendes la diferencia entre un bind shell y un reverse shell. Puedes responder a esta pregunta: ¿Cuál es la ventaja de usar un reverse shell desde el punto de vista de su viabilidad?  (elementos que detienen la conexión);En el caso de reverse shell, la ventaja es que es la maquina victima la que establece la conexión, lo que hace que los firewalls no lo bloqueen;
+Oro;Puedes responder a estas preguntas: ¿Por qué crees que es útil saber cómo usar PHP o Python para abrir un reverse shell? ¿Funcionan igual que los de NetCat?;Porque no siempre es posible usara netcat;Funciona exactamente igual
+Platino;¿Tienes secretos? No, TENEMOS: la habilidad para la explotación de máquinas te permite exfiltrar información privada, nombres de usuario, contraseñas y abrir shells remotos sobre sistemas con vulnerabilidades típicas. ;;

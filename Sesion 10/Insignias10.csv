@@ -1,0 +1,28 @@
+Nivel de Insignia;Desbloqueada cuando;Notas
+Bronce;Entiendes lo que es un proxy inverso. Puede responder a esta pregunta: ¿Un proxy inverso realmente sirve sitios web por sí mismo?;
+Bronce;Entiendes cuál es la funcionalidad principal de un WAF;
+Bronce;Sabes cómo iniciar escaneos web usando nikto;
+Bronce;Sabes qué es Security Onion;
+Bronce;Puedes verificar si ModSecurity también proporciona protección contra algunos escaneos nmap;
+Bronce;Sabes cómo actualizar las reglas de Suricata;
+Bronce;Comprendes el propósito de una herramienta SAST y el tipo de resultados que produce;
+Bronce;Comprendes el propósito de una herramienta SCA y el tipo de resultados que produce;
+Plata;Puedes responder a las preguntas: ¿Un proxy inverso aísla completamente una infraestructura de servicios de sus clientes potenciales? ¿Cuál es la razón de usar dos rangos de red totalmente diferentes?;
+Plata;Puede responder a estas preguntas: ¿La regla personalizada que utilizamos está probando el motor ModSecurity en sí o las reglas CRS que descargamos? ¿Es esto suficiente para probar que toda la infraestructura está funcionando?;
+Plata;Puede responder a estas preguntas: ¿El falso ataque RCE que hicimos está probando el motor ModSecurity en sí o las reglas CRS que descargamos? ¿Es esto suficiente para probar que toda la infraestructura está funcionando?;
+Plata;Puedes responder a estas preguntas: ¿Se registran las solicitudes bloqueadas de ModSecurity? En ese caso, ¿en qué fichero?;
+Plata;Puede responder a esta pregunta: ¿Protege un WAF contra los intentos de ataque automatizados?;
+Plata;Puede responder a esta pregunta: ¿Protege un WAF contra los intentos típicos de ataque web (XSS, inyección SQL…)? ¿Identifica el tipo de intento de ataque? Por lo tanto, ¿puede una GUI potencial que lea los logs del WAF mostrar a sus usuarios los tipos de ataque que se están produciendo? ;
+Plata;Entiendes el propósito de las reglas de un sistema NIDS. Puedes responder a estas preguntas: ¿es la cantidad y la calidad de las reglas que proporcionamos a un NIDS la clave para la efectividad de sus capacidades de detección? ¿Crees que vale la pena invertir (por ejemplo, pagar una suscripción) en reglas probadas y de buena reputación que sean gestionadas por mantenedores de confianza?;
+Plata;Comprendes cómo se pueden combinar un NIDS y un forward proxy para detectar máquinas comprometidas en una red interna;
+Plata;Puedes responder a estas preguntas: ¿Qué determina el número de reglas que necesitamos activar en un IDS? ¿Crees que los servidores públicos (Internet) y los situados en LANs deberían usar las mismas reglas?;
+Plata;Puedes analizar el código fuente de una aplicación utilizando SonarQube. Puedes responder a estas preguntas:  ¿Crees que este tipo de herramientas localizan todos los errores posibles? Si no es así, ¿crees que conviene usarlos?;
+Oro;Puedes configurar correctamente un WAF ModSecurity2 que funcione protegiendo una infraestructura de servidor;
+Oro;Teniendo en cuenta que un WAF identifica un ataque solo si la sintaxis del lenguaje es correcta (XSS, SQL Injection…), razona sobre cuál podría ser la técnica principal que se puede utilizar para eludir la protección de un WAF;
+Oro;Puedes responder a estas preguntas: ¿Por qué es importante un proxy inverso desde el punto de vista de la seguridad? ¿Crees que el concepto es como la encapsulación en la programación orientada a objetos?;
+Oro;Puedes responder a esta pregunta: ¿Crees que los WAF proporcionan la máxima protección contra ataques, o deberían tratarse como una capa adicional de protección?;
+Oro;Sabes cómo combinar técnicas que vimos en laboratorios anteriores para mejorar aún más la seguridad de un proxy en más escenarios.;
+Oro;Puedes responder a estas preguntas: ¿Suricata detecta problemas potenciales o también bloquea las solicitudes “ofensivas”? ¿Entiendes la diferencia entre los sistemas de detección de intrusiones y los sistemas de prevención de intrusiones?;
+Oro;Puedes responder a estas preguntas: ¿Qué tienes que hacer para detectar una amenaza utilizando Suricata mientras está sucediendo? ¿Es efectivo hacerlo manualmente? ¿Qué tipo de herramientas crees que necesitarás para hacerlo? ¿Entiendes por qué los paquetes de software integrados como el que se ofrece en Security Onion son necesarios entonces?;
+Oro;Entiendes claramente el tipo de vulnerabilidades que pueden ser prevenidas por un WAF como ModSecurity frente a las prevenidas por una herramienta de análisis estático como SonarQube;
+Platino;¡Hold the door! Puedes proteger un servidor web mediante un proxy inverso securizado con un WAF y con capacidades de detección de intrusiones, y localizar vulnerabilidades en el código o sus dependencias mediante la implementación de herramientas SCA y SAST automatizadas;
